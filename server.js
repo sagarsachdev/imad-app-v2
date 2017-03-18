@@ -25,14 +25,28 @@ var articles = {
             heading : 'Article Two',
             date : 'sept 28 , 2016',
             content : `<p>
-                This is content for my second article.`
+                This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.
+                </p>
+                <p>
+                This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.
+                </p>
+                <p>
+                This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.This is content for my second article.
+                </p>`
     },
     'article-three' : {
         title : 'Article Three | Sagar Sachdev',
         heading : 'Article Three',
         date : 'sept 28 , 2016',
         content : `<p>
-                This is content for my third article.`
+                This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.
+                </p>
+                <p>
+                This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.
+                </p>
+                <p>
+                This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.This is content for my third article.
+                </p>`
     }
 }
 function createTemplate(data){
