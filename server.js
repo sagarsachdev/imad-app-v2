@@ -133,9 +133,16 @@ app.post('/login', function(req,res){
                 res.send(403).send("username/password not found");
             }
             else{
-                res.send("User successfully created!");
+                //Match the password
+                var dbString = result.rows[0].password;
+                var salt = dbString.split('$')[2];
+                var hashedPassword = hash(password, salt); //creating a hash based on password submitted and the original salt
+                if(hashedPassword === dbString){
+                    res.send("credentials are correct!");
+                }else{
+                    res.send(403).send("username/password not found");
+                }
             }
-            res.send("user successfully created: " + username);
         }        
     });    
 });
