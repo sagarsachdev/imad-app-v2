@@ -1,5 +1,5 @@
 // counter code
-var button = document.getElementById('counter');
+/* var button = document.getElementById('counter');
 button.onclick = function(){
     
     //Create a request
@@ -23,7 +23,7 @@ button.onclick = function(){
     request.open('GET','http://sagarsachdev.imad.hasura-app.io/counter',true);
     request.send(null);
 };
-
+*/
 // submit username/password to login
 var submit = document.getElementById('submit_btn'); 
 submit.onclick = function(){
