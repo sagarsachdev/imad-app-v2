@@ -61,6 +61,8 @@ submit.onclick = function(){
 //    var name = nameInput.value;
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
+    console.log(username);
+    console.log(password);
     //Make the request
     //request.open('GET','http://sagarsachdev.imad.hasura-app.io/submit-name?name=' + name,true);
     //request.send(null);
