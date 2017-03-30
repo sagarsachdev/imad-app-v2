@@ -57,8 +57,8 @@ submit.onclick = function(){
         }    
         //Not done yet 
     };
-    var nameInput = document.getElementById('name');
-    var name = nameInput.value;
+//    var nameInput = document.getElementById('name');
+//    var name = nameInput.value;
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
     //Make the request
