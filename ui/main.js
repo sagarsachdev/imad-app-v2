@@ -24,7 +24,7 @@ button.onclick = function(){
     request.send(null);
 };
 
-// submit name
+// submit username/password to login
 var submit = document.getElementById('submit_btn'); 
 submit.onclick = function(){
    //Create a request
@@ -46,14 +46,26 @@ submit.onclick = function(){
                   }
                   var ul = document.getElementById('namelist');
                   ul.innerHTML = list;
+                  
+                  console.log("user logged in");
+                  alert("Logged in successfully!");
+            }else if(request.status === 403){
+                alert("Username/password is incorrect!");
+            }else (request.status === 500){
+                alert("Sorry, Something went wrong on thw server!");
             }
         }    
         //Not done yet 
     };
     var nameInput = document.getElementById('name');
     var name = nameInput.value;
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
     //Make the request
-    request.open('GET','http://sagarsachdev.imad.hasura-app.io/submit-name?name=' + name,true);
-    request.send(null);
+    //request.open('GET','http://sagarsachdev.imad.hasura-app.io/submit-name?name=' + name,true);
+    //request.send(null);
+    request.open('POST','http://sagarsachdev.imad.hasura-app.io/submit-name?name=' + name,true);
+    request.setRequestHeader('Content-Type', 'application/json');
+    request.send(JSON.stringify({username:username, password:passwor}));
     
 };
