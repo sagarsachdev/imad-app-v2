@@ -66,6 +66,6 @@ submit.onclick = function(){
     //request.send(null);
     request.open('POST','http://sagarsachdev.imad.hasura-app.io/submit-name?name=' + name,true);
     request.setRequestHeader('Content-Type', 'application/json');
-    request.send(JSON.stringify({username:username, password:passwor}));
+    request.send(JSON.stringify({username:username, password:password}));
     
 };
